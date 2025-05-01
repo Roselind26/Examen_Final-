@@ -30,3 +30,17 @@ Este proyecto implementa una arquitectura básica de MLOps usando FastAPI, entre
 git clone https://github.com/Roselind26/Examen_Final-.git
 cd Examen_Final-
 
+```
+#Seguridad en datos de pacientes
+Se implementó la arquitectura de conexión a MongoDB Atlas, que incluye autenticación mediante usuario y contraseña, cifrado en tránsito (TLS), y la posibilidad de establecer permisos de acceso restringido. Sin embargo, debido a errores en la resolución DNS del protocolo mongodb+srv:// en el entorno local, se decidió desactivar temporalmente esta conexión para garantizar que la API funcionara correctamente.
+
+El código sigue disponible y operativo para almacenar los datos en MongoDB una vez que se restablezcan las condiciones de red necesarias.
+
+```
+
+#Monitoreo y reportes del sistema
+"En esta versión del sistema no se incluyó la integración de herramientas de monitoreo como Prometheus, Grafana o MLflow. La decisión responde a la priorización de los elementos esenciales del flujo MLOps (modelo funcional, API, entrenamiento automático con DVC y control de versiones).
+
+No obstante, la arquitectura propuesta admite la incorporación futura de un sistema de monitoreo basado en métricas del modelo, logs de la API y alertas ante fallos en el pipeline"
+
+```
